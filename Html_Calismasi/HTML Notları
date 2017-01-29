@@ -1,0 +1,171 @@
+HTML Notları
+		<meta charset="utf-8" name="Description" content="Html ve Css üzerine Dersler">
+		<meta name="Keywords" content="XHTML, HTML, HTML5, CSS(Bunlar google çıkması için gerekli olan kelimeler"> 
+		<meta name="Revisit-After" content="1 days" güncelenme olayı >
+		<meta name="copyright" content="2017 copyright | hsyn.com">
+		<meta name="robots" content="index,follow (Robotların bunları takip etmesi gerektiğini söylüyoruz">
+---Paragraf Parametreleri---
+		pre / içindeki boşlık ve satır sonları gibi karakterlerin korunmasını sağlar.
+		abbr / kısaltma etiketi TSK "Türk Silahlı Kuvvetleri"
+		acronym / ""
+		adress / yazar hakkında adres eklemek için  bu etiketi kullanabiliriz.
+		sub / yazıları diğer yazının altında gösterir.
+		sup / yazıları diğer yazının üstünde gösterir.
+		b / yazımızı bold yapmak için
+		strong / yazımızı bold yapmak için (seo için uyumlu)
+		i / yazılarımızı eğik-italik yapmak için
+		em / yazılarımızı eğik-italik yapmak için (seo için uyumlu)
+		blockquote /yazılarımızda girinti oluşturmak için
+		q / yazılarımızda alıntı yapmak için
+		br /yazılarımızı bir alt satıra geçirmek için
+		cite /bir dergiye, gazeteye ve yazıya atıfta bulunacağımızda kullanırız. tarayıcıda italik olarak çıkar
+		code / içerdiği metnin bilgisayardaki kod parçası olduğunu belirtir. sabit görüntülü metin olarak gözükür.
+--- IMG Parametreleri <img />---
+		id / eşsiz kimliği
+		class / sınıf adını belirtir
+		style / satır içi CSS kuralını tanımlar -yani etikete şekil veririz.
+		title / etiket için kısa bilgi -tanım
+	 	dir / içerdiği metnin yönü ltr-rtl
+		lang / içerdiği metnin dilini belirtir.
+		type / etiketin içerik tipini belirler
+		name / ismini belirler.
+		href / URL adresinin belirler
+		rel  / bağlantı kaynağı ile güncel sayfanın arasındaki ilişki
+		accesskey / klavye ile erişim sağlamak için
+		target / linklerde hedefin hangi pencerede açılacağını belirler
+		src / ilgili kaynağın yerini gösterir.
+		alt / resmin açıklaması gelecek
+		border / resmi çerçeve içine alır
+		align / özelliği resimden sonra bir paragraf eklenirse onu sağına veya soluna almasını sağlar, hizalama işlemidir.
+		
+		** Fotoğrafları isimlendirirken etiket olarak yap mesela, html-eğitim-seti gibi  "title" da aynı şekilde olmalı
+
+LİSTE ETİKETLERİ
+Menülerde açılır menülede kullanılıyor.
+ul,ol,dl -> ul sırasız listeleme, ol- sıralı listeleme
+li,li, dt-dd
+
+ul ve ol için alt parametreler
+start="5" -> yazıldığında listeleme 5 den başlıyor
+type="circle/disc/square" dediğimizde ul deki listelemede şekiller değişiyor.
+
+LİNK ETİKETİ <a> </a>
+<a> etiketi inline etikettir, yanyana da alt altada yazılır,
+default olarak yanyana yazılır.
+Sayfa dışına linkler
+Başka bir siteye link verme 
+Sayfa içine linkler
+Başka sayfadaki ilgili yere link
+Dosyaya link
+Mail linki
+Resimlerle link verme
+
+-linkin hangi sayfada açılacağını belirtir.
+dosyalama yönteminde ftp kullanılıyor genelde üniversitelerde
+biz http kullanacağız.
+href = highrefrence
+target="blank(yeni bir sekmede açıyor), parent-self-top-new (bunlarda aynı sayfada açıyor değişen bir şey yok) "
+rel="tag" etiketiyle linkin adına yazdığımızı rel="tag"le ilişkilendiriyoruz, tagımız oluyor arama motorunda. O konu ile ilgili içerik olduğunu bildiriyoruz.
+
+Siteler arası ilişkiler xfn-xhtml friends network
+
+alternate : Belgenin başka bir versiyonu
+author : belgenin yazarına linkler
+bookmark:yer imi için kullanılan linkler
+help: yardım için kullanılan linkler
+license: belge telif hakkı için kullanılan linkler
+next: bir sonraki belge için link
+nofollow : google tarafından dikkate alınmaz, bunu yazınca siteniz ratenden yaralanamaz link verdiğimiz site
+noreferrer: specifies that the browser should not send a HTTP referer header if the user follows the hyperlink
+prefetch hedef belgeyi önbellekleme yapar.
+prev bağlantının, güncel sayfadan önceki sayfa olduğunu belirtir
+search arama belgesi olduğunu belirtir.
+tag belge için geçerli bir etiket
+
+xfn-Xhtml Friends Network
+İki iste arasında nasıl ilişki olduğunu gösteriyor:
+<a href="http://ayse-blog.deneme.org" rel="sweetheart date met">Ayse</a>
+Yukardaki sevgili
+Aşağıdakiler arkadaş
+<a href="http://hasan-blog.deneme.org" rel="friend met">Hasan</a>
+<a href="http://recep-blog.deneme.org" rel="friend met">Recep</a>
+
+<a href="http://plus.google.com/109412257237874861202? rel=author">Google</a>
+
+Siteler Arası İlişkilere Göre XFN Kodları
+
+Kimlik Yapısına Göre Kullanımlar
+Diğer İnternet Adresim : "me"
+
+Arkadaşlık ilişkilerine Göre Kullanımlar
+İlişki: "contact"
+Tanıdık:"acquaintance"
+Arkadaş:"friend"
+
+Fiziki Duruma Göre Kullanımı
+Arkadaş: "met"
+
+Mesleki İlişkilere Göre Kullanımlar
+İş Arkadaşı : "co-worker"
+Okul Arkadaşı: "colleague"
+
+RESİM HARİTALARI İLE AYNI RESMİN FARKLI NOKTALARINA LİNK VERME
+
+<img src="img/kadın.jpg" width="420" height="250" usemap="#resimharitasi" border="0" />
+
+<map name="resimharitasi" id="Map">
+	<area shape="rect" coords="59,90,190,198" href="link-1.html"/>
+	<area shape="circle" coords="282,215,33" href="link-2.html"/>
+	<area shape="poly" coords="200,38,342,38,402,82,357,161,298,118,45,302,70" href="link-3.html"/>
+</map>
+
+HTML TABLO ETİKETLERİ
+
+<table>
+<tr> satır etiketi, table row
+<td> tablo bilgisi, table data
+<th> tablo başlığı
+<caption> Tablonun dışında başlık veya not girmek için kullanabilirsin.
+<colspan="">
+<rowspan="">
+Yukardaki ikili, tablo ve sütunları birleştirmeye yarıyor.
+
+Verilerin hızlı bir şekilde listelenmesi için kullanılmasını sağlar.
+ve reklam maillerinin tasarlanmasında kullanılıyor
+Table da boşluk karakterini algılıyor &nbsp; gerek olmuyor yani :)
+
+EMBEDED VE IFRAME ETİKETLERİ
+Embeded :Flaş tarzı dosyaları eklememize yardım eder.
+iframe  : ile başka bir sayfayı kendi sayfamızda görüntülemeye yarar.
+
+FORM VE ETİKETLERİ
+
+<form name="" id="" action="" method="get-post">
+	  	<input type="text" name="" value="" size="" maxlength="" disabled="disabled" readonly="readonly" placeholder="adınızı yazınız"/>
+	  	<input type="hidden" name="" value=""/>
+	  	<input type="checkbox" name="" value="" checked="" disabled="" />
+	  	<input type="text" name="text" autofocus="" />
+	  	<input type="password" name="password"/>
+	  	<input type="date" name="date" pattern="\d{4}-\d{2}-\d{2}" title="YYYY-MM-DD" />
+	  	<input type="color" name="color" value="#ddd"/>
+	  	<input type="email" name="email" multiple />
+	  	Sayı (1-10) <input type="number" name="number" min="1" max="10" value="5">
+	  	Aralık (1-100'kadar kaçar kaçar 10)
+	  	<input type="range" name="range" min="0" max="100" step="10" value="5">
+	  	<input type="search" name="source">
+	  	<input type="url" name="url">
+	  	<input type="file" name="">
+	  	<textarea name="textarea" columns="" rows=""></textarea>
+	  	<input type="submit" name="submit" value="Bilgileri Yolla">
+	  	<input type="reset" name="submit" value="Bilgileri Yolla">
+	  	<fieldset>
+	  		<legend>grup</legend>
+	  	</fieldset>
+	  	<select name="select">
+	  		<option value="" disabled selected>--Lütfen Seçim Yapınız--</option>
+	  		<option value="kırmızı">Kırmızı</option>	  		
+	  		<option value="mavi">Mavi</option>
+	  		<option value="sarı">Sarı</option>
+	  	</select>
+</form> 
+
