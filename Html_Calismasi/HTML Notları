@@ -141,9 +141,11 @@ iframe  : ile başka bir sayfayı kendi sayfamızda görüntülemeye yarar.
 FORM VE ETİKETLERİ
 
 <form name="" id="" action="" method="get-post">
-	  	<input type="text" name="" value="" size="" maxlength="" disabled="disabled" readonly="readonly" placeholder="adınızı yazınız"/>
-	  	<input type="hidden" name="" value=""/>
+	  	<input type="text" name="" value="" size="uzunlukdeğeri" maxlength="harf/sayıgirmeyi sınırlandırıyor" disabled="disabled"->İnput girişini kapatıyor. readonly="readonly" placeholder="adınızı yazınız"/>
+	  	<input type="hidden" name="" value=""/> Sizin ihtiyacınız olan ama kullanıcaya gerek olmayan bilgileri gizlemek için. Mesela veritabanına kaydetmek için ve ip almayı sağlıyor.
 	  	<input type="checkbox" name="" value="" checked="" disabled="" />
+
+
 	  	<input type="text" name="text" autofocus="" />
 	  	<input type="password" name="password"/>
 	  	<input type="date" name="date" pattern="\d{4}-\d{2}-\d{2}" title="YYYY-MM-DD" />
@@ -159,10 +161,11 @@ FORM VE ETİKETLERİ
 	  	<input type="submit" name="submit" value="Bilgileri Yolla">
 	  	<input type="reset" name="submit" value="Bilgileri Yolla">
 	  	<fieldset>
-	  		<legend>grup</legend>
+	  		<legend>grup</legend> //Formlarda gruplamak için kullanılıyorlar!!
 	  	</fieldset>
 	  	<select name="select">
 	  		<option value="" disabled selected>--Lütfen Seçim Yapınız--</option>
+	  		Value kısmı veritabanına girecek olan kısım!
 	  		<option value="kırmızı">Kırmızı</option>	  		
 	  		<option value="mavi">Mavi</option>
 	  		<option value="sarı">Sarı</option>

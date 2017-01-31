@@ -168,8 +168,66 @@
 
 	  <h1>FORM ETİKETLERİ</h1>
 		<form name="uyeKayit" id="uye-kayit-formu" method="post" action="gonder.asp">
-			<input type="text" name="adınız" value="html-ogreniyorum" placeholder="Lütfen Adınızı Yazınız">			
-
+			<input type="text" name="adınız" value="html-ogreniyorum" placeholder="Lütfen Adınızı Yazınız">		
+			<input type="text" name="adiniz" value="" placeholder="Adınızı yazınız." maxlength="5" size="60">
+		</form>
+		<br/>
+		<form name="kayit-formu" id="kayit-formu" method="post" action="">
+			<fieldset>
+			<legend>Üyelik Bilgileri</legend>
+			<label for="adi">Adın:</label><input type="text" name="adi" id="adi" value=""/><br/>
+			<label for="soyadi">Soyadın:</label><input type="text" name="soyadi" id="soyadi" value=""/><br/>
+			<label for="parola">Parola:</label><input type="password" name="parola" id="parola" value=""><br/>
+			<label for="parolatekrar">ParolaTekrar:</label><input type="password" name="parolatekrar" id="parolatekrar" value="">
+			</fieldset>
+			<input type="hidden" value=""/>
+			<fieldset>
+				<legend>
+			<h3>Web Tasarımında Kullanılan Programlar</h3></legend>
+					<label for="photoshop">Photoshop</label><input type="checkbox" name="photoshop" id="photoshop" value="photoshop"/>
+					<label for="fireworks">Fireworks</label><input type="checkbox" name="fireworks" id="fireworks" value="fireworks"/>
+					<p>Burada birden fazla seçim yapılabiliyor.</p>
+					
+			</fieldset>
+			<fieldset>
+			<legend>Cinsiyetiniz</legend>
+					
+					<label for="kadin">Kadın</label><input type="radio" name="cinsiyet" id="kadin" value="kadin">
+					<label for="erkek">Erkek</label><input type="radio" name="cinsiyet" id="erkek" value="erkek">
+					<p>Radio'da, name="" attribute içini aynı yaptığımızda sadece birini işaretleme özelliği elde ediyoruz.</p>
+					<br/>
+					<label for="mesaj">Mesajınız:</label>
+					<textarea name="mesaj" cols="55" rows="15">
+						
+					</textarea><br/>
+					<label for="yukle">Resim Yükle</label><input type="file" id="yukle" value=""><br/>
+					<input type="submit" value="Mesajımızı Gönder">
+					<input type="reset" value="Vazgeçtim!">
+					<br/>
+					</fieldset>
+					<h3>Hangisini Biliyorsunuz?</h3>
+					<select name="select">
+							<option name="" value="" disabled="disabled" selected="selected">Lütfen Bir Seçim Yapınız</option>
+							<option name="" value="html">Html</option>
+							<option name="" value="html">C#</option>
+							<option name="" value="html">Css</option>
+							<option name="" value="html">JS</option>
+							<option name="" value="html">jQuery</option>
+							<optgroup label="Kategori 1">
+							<option name="" value="html">Html</option>
+							<option name="" value="html">C#</option>
+							<option name="" value="html">Css</option>
+							<option name="" value="html">JS</option>
+							<option name="" value="html">jQuery</option>
+							</optgroup>
+							<optgroup label="Kategori 2">
+							<option name="" value="html">Html</option>
+							<option name="" value="html">C#</option>
+							<option name="" value="html">Css</option>
+							<option name="" value="html">JS</option>
+							<option name="" value="html">jQuery</option>
+							</optgroup>
+					</select>
 		</form>
 	</body>
 </html>
