@@ -228,7 +228,34 @@ dev.w3.org/html5/html-author
 
 <aside> </aside> siteni yan tarafında olan yer, arşiv yeri, konu yeri vs.
 
+<footer>
+		Sitelerin en alt kısmına girilecek bilgi veya nav oluşturma
+	</footer>
 
+<mark> etiketi cümlelerde vurguamak istediğimiz yerer için kullanlıyor </mark>
 
+<meter value="10" min="0" max="100"></meter>
 
+VIDEO VE AUDIO ETİKETLERİ
+<video width="300" height="250" controls="controls" autoplay loop="loop" poster="resimyolu gelicek">
+		<source src="Desktop/yemyesil.mp4" type="video/mp3">
+		<source src="Videos/yemyesil.webm" type="video/webm">
+		<source src="Videos/yemyesil.ogv" type="video/ogv">
+		<h4>Çalışmadı</h4>		
+	</video>
+
+<audio controls="controls">
+		<source src="dosyalar/audio.mp3" type="audio/mp4"/>
+		<source src="dosyalar/audio.ogg" type="audio/ogg"/>
+		tarayıcınız çok eski, lütfen yenisini yükleyin...
+</audio>
+
+Free Müzik indirmek için 
+incompetech.com
+
+videojs ile video ekleme işlemleri daha kolay...
+
+<header contenteditable="true">
+   bunu yaptığında web üzerinde yeni yazılar ekleyebiliyoruz, ilginç!!
+</header>
 
