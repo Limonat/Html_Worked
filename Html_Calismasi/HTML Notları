@@ -172,3 +172,63 @@ FORM VE ETİKETLERİ
 	  	</select>
 </form> 
 
+HTML5 FORM ÖZELLİKLERİ
+
+<form name="html" method="get">
+        <input type="date" name="date" pattern="\d{2}-\d{2}-\d{4}" title="DD-MM-YYYY" />
+        <!--pattern: tarihin nasıl yazılacağını/görüneceğini belirtiyor. -->
+        <input type="color" name="color" value=""/>
+        <input type="email" name="email" multiple />
+        <!-- multiple birden fazla e-mail yazmayı sağlar.-->
+        <input type="search" name="source"/><br/>
+        <input type="url" name="url"/>
+        <!-- Url girme işi http://...-->
+        <input  type="number" name="number" min="1" max="10" value="5"/>
+        <!--Yukardaki belli bir aralıkta verilen rakamları seçme ve varsayılan değeri-->
+        <label>Sürgülü Aralık değeri</label><input type="range" name="range" min="0" max="100" step="10" value="50"/>
+         
+        <input type="submit" name="send" value="Gönder!" />
+
+    </form>
+
+ readonly="readonly" okunurluk katıyor değeri değiştiremiyoruz.
+ required="required" zorunluluk gereklilik katıyor.
+ autofocus textin doldurulması gereken yere imlecin odaklanmasını sağlar.
+ <input type="text" name="text" autofocus />
+ tabindex -> kullanıcıya alanları doldururken tab tuşunu kullanmasını sağlar
+ <input type="text" name="text" tabindex="1" />
+ <input type="text" name="text" tabindex="2" />
+ <datalist></datalist> --> text alanına tıkladığımız anda tüm verileri gösteriyor.
+
+HTML 5 <div>
+
+Block seviyesinde elemanlar	 satırda alt alta gelirler, aksi belirtilmedikçe!
+div, form, h1...h6, ul, li, ol,p,table,pre gibi...
+
+Inline elemanları yazıldıklarında yanyana gelirler, aksi belirtilmedikçe!
+a,img,em,input,strong,label, span ... gibi...
+
+Aksii!!!
+<ul>
+	<li><a href="">Anasayfa</a></li>
+	<li><a href="">Hakkımızda</a></li>
+	<li><a href="">Ürünler</a></li>
+	<li><a href="">Referanslar</a></li>
+	<li><a href="">İk</a></li>
+	<li><a href="">İletişim</a></li>
+</ul>
+
+BU SİTELERİ TAKİP ET
+caniuse.com
+html5test.com
+dev.w3.org/html5/html-author
+
+
+
+
+<aside> </aside> siteni yan tarafında olan yer, arşiv yeri, konu yeri vs.
+
+
+
+
+
